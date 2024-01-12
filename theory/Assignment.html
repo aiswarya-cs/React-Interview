@@ -1,0 +1,74 @@
+1.What is Emmet?
+   
+      Emmet is not a programming or script language. it is a development tool that allows for faster html and css coding. Emmet provides a shorthand syntax for writing
+ html,css code,  making it more efficient and concise.
+
+2.Difference between a Library and Framework?What is library and framework?
+
+  Library : It performs a set of  specific and well-defined operations.
+  Framework: It is known to be a skeleton where the application defines the content of the operation by filling out the skeleton
+
+	       Framework   :-
+
+	*.It comprises of lot of APIs , compilers , support programs , libraries etc.
+	*.It is difficult to replace frameworks.
+	*.A framework development requires a lot of code that decrease performance and increase the load time.
+	*.Including framework smoothly into an existing project is impossible.
+	*.Its example are AngularJS , Spring , NodeJS , etc.
+ 
+
+    		Library    :-
+        *.It is a collection of helper modules , classes , objects , functions , pre-written code , etc.
+	*.A library is easy to be replaced with another library.
+	*.Building a library requires less code , so there is better performance and fast load time.
+	*.Libraries can be integrated easily into existing projects to add some specific functionality.
+	*Its example are JQuery , React JS , etc.
+
+
+3.What is CDN? Why do we use it?
+
+	CDN stands for Content Delivery Network. It is a system of distributed servers that work together to deliver web content, such as images, videos, stylesheets, and scripts, to users based on their geographical location. The main purpose of using a CDN is to improve the performance, speed, and availability of web content.
+
+		*Faster Content Delivery
+		*Load Distribution
+		*Scalability.
+		*Reliability and Redundancy.
+		*Security.
+		*Global Reach.
+
+4.Why is React known as React?
+
+
+     React is named React because of its ability to react to changes in data. React is called React because it was designed to be a declarative, efficient, and flexible JavaScript library for building user interfaces. The name React was chosen because the library was designed to allow developers to "react" to changes in state and data within an application, and to update the user interface in a declarative and efficient manner. React is a JavaScript-based UI development library. Facebook and an open-source developer community run it.
+
+5.What is crossorigin in script tag?
+    
+
+        The crossorigin attribute sets the mode of the request to an HTTP CORS Request. The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains.
+
+6.What is diference between React and ReactDOM?
+
+	React is a JavaScript library for building User Interfaces whereas ReactDOM is also JavaScript library that allows React to interact with the DOM. The react package contains React.createElement(), React.Component, React.Children, and other helpers related to elements and component classes. You can think of these as the isomorphic or universal helpers that you need to build components. The react-dom package contains ReactDOM.render(), and in react-dom/server we have server-side rendering support with ReactDOMServer.renderToString() and ReactDOMServer.renderToStaticMarkup().
+
+7.What is difference between react.development.js and react.production.js files via CDN?
+
+	Development is the stage of an application before it's made public while production is the term used for the same application when it's made public. Development build is several times (maybe 3-5x) slower than the production build.
+
+8.What is async and defer?
+
+	 Async - The async attribute is a boolean attribute. The script is downloaded in parallel(in the background) to parsing the page, and executed as soon as it is available (do not block HTML DOM construction during downloading process) and don’t wait for anything.
+
+Syntax:-
+<script src="demo_async.js" async></script>
+Defer - The defer attribute is a boolean attribute. The script is downloaded in parallel(in the background) to parsing the page, and executed after the page has finished parsing(when browser finished DOM construction). The defer attribute tells the browser not to wait for the script. Instead, the browser will continue to process the HTML, build DOM.
+
+Syntax:-
+<script src="demo_defer.js" defer></script>
+Unless you're supporting ancient legacy systems, always add type="module" to all your script tags:
+
+<script type="module" src="main.js">
+
+</script> and place the tag inside <head>
+ <script defer nomodule> 
+// <script defer nomodule> can be used as a legacy fallback.
+//  As the name suggests, it allows you to import modules, which makes it easier to organize your code. Enable strict mode by default. This makes your code run faster, and reports more runtime errors instead of silently ignoring them. Execute your code only after the DOM has initialized, which makes DOM manipulation easier. Thanks to this, you won't need to listen to load/readystatechange/DOMContentLoaded events. Prevent top level variables from implicitly polluting the global namespace. Allow you to use top-level await in supported engines. Load and parse your code asynchronously, which improves load performance.

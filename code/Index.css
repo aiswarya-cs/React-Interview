@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    width: 100vw;
+    height: 50px;
+    background: hsl(0, 2%, 10%);
+    color: #fff;
+}
+#container{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    padding:1em;
+    gap: 10px;
+    font-size: 18px;
+}
+#container li{
+    color: brown;
+}
+#container li:hover{
+    color: rgb(168, 85, 85);
+    cursor: pointer;
+}
